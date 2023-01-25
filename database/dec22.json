@@ -1,0 +1,26 @@
+{
+	"name": "dec22",
+	"properties": {
+		"Name": "dec22",
+		"EntityType": "DATABASE",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"Properties": {
+			"IsSyMSCDMDatabase": true
+		},
+		"Description": "demo db for poc",
+		"Source": {
+			"Provider": "ADLS",
+			"Location": "abfss://stgcontainerlkhouse@stgaccountlkhouse.dfs.core.windows.net/dec22",
+			"Properties": {
+				"FormatType": "parquet",
+				"LinkedServiceName": "synapsevt22-WorkspaceDefaultStorage"
+			}
+		},
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 2,
+		"ObjectId": "b4f844e2-c7af-4901-9c64-d431638b8cfa"
+	},
+	"type": "DATABASE"
+}

@@ -1,0 +1,82 @@
+{
+	"name": "dim_avengers_orig",
+	"properties": {
+		"Name": "dim_avengers_orig",
+		"EntityType": "TABLE",
+		"TableType": "EXTERNAL",
+		"Namespace": {
+			"SchemaName": null,
+			"DatabaseName": "jan23",
+			"DatabaseId": null
+		},
+		"StorageDescriptor": {
+			"Distribution": null,
+			"Columns": [
+				{
+					"Name": "col",
+					"Description": "from deserializer",
+					"OriginDataTypeName": {
+						"TypeName": "array<string>",
+						"IsComplexType": true,
+						"IsNullable": true,
+						"Length": 0,
+						"Precision": 0,
+						"Scale": 0,
+						"Properties": {
+							"HIVE_TYPE_STRING": "array<string>"
+						}
+					}
+				}
+			],
+			"ColumnSetEntityName": "88cf146c-1ee6-4d6c-9781-4d59c81b4d8c",
+			"Format": {
+				"InputFormat": "org.apache.hadoop.mapred.SequenceFileInputFormat",
+				"OutputFormat": "org.apache.hadoop.hive.ql.io.HiveSequenceFileOutputFormat",
+				"FormatType": "delta",
+				"SerializeLib": "org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe",
+				"Properties": {
+					"path": "abfss://stgcontainerlkhouse@stgaccountlkhouse.dfs.core.windows.net/jan23/poc/dim_avengers_orig",
+					"serialization.format": "1"
+				}
+			},
+			"Source": {
+				"Location": "abfss://stgcontainerlkhouse@stgaccountlkhouse.dfs.core.windows.net/jan23/poc/dim_avengers_orig",
+				"Properties": {
+					"LocationSetToDatabaseDefault": false
+				}
+			},
+			"Properties": {
+				"derivedModelAttributeInfo": "{\"attributeReferences\":{}}"
+			},
+			"Compressed": false,
+			"SerDeInfo": null,
+			"IsStoredAsSubdirectories": false
+		},
+		"Owner": "trusted-service-user",
+		"CreateTime": 1674613361,
+		"LastAccessTime": 0,
+		"Retention": 0,
+		"Temporary": false,
+		"IsRewriteEnabled": false,
+		"ViewOriginalText": null,
+		"ViewExpandedText": null,
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"OriginObjectId": null,
+		"IsSharedEntity": false,
+		"PublishStatus": "PUBLISHED",
+		"Properties": {
+			"EXTERNAL": "TRUE",
+			"Transient_lastDdlTime": "1674613361",
+			"spark.sql.sources.schema": "{\"type\":\"struct\",\"fields\":[]}",
+			"spark.sql.partitionProvider": "catalog",
+			"spark.sql.sources.provider": "delta",
+			"spark.sql.create.version": "3.2.2.5.1-80715235",
+			"PrimaryKeys": ""
+		},
+		"ObjectVersion": 1,
+		"ObjectId": "01bfd2c6-63a7-4d33-b690-295a2d63ec04"
+	},
+	"type": "TABLE"
+}

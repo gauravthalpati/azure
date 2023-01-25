@@ -1,0 +1,26 @@
+{
+	"name": "jan23",
+	"properties": {
+		"Name": "jan23",
+		"EntityType": "DATABASE",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"Properties": {
+			"IsSyMSCDMDatabase": true
+		},
+		"Description": "lake db for spark poc",
+		"Source": {
+			"Provider": "ADLS",
+			"Location": "abfss://stgcontainerlkhouse@stgaccountlkhouse.dfs.core.windows.net/jan23/input",
+			"Properties": {
+				"FormatType": "parquet",
+				"LinkedServiceName": "synapsevt22-WorkspaceDefaultStorage"
+			}
+		},
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 1,
+		"ObjectId": "8a7b03b4-78fd-4be4-aee6-617869756595"
+	},
+	"type": "DATABASE"
+}

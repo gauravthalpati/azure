@@ -1,0 +1,25 @@
+{
+	"name": "dec22a",
+	"properties": {
+		"Name": "dec22a",
+		"EntityType": "DATABASE",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"Properties": {
+			"IsSyMSCDMDatabase": true
+		},
+		"Source": {
+			"Provider": "ADLS",
+			"Location": "abfss://stgcontainerlkhouse@stgaccountlkhouse.dfs.core.windows.net/dec22a",
+			"Properties": {
+				"FormatType": "parquet",
+				"LinkedServiceName": "synapsevt22-WorkspaceDefaultStorage"
+			}
+		},
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 1,
+		"ObjectId": "9c05aae4-d77f-461b-a7ad-3bfb1fbd04cb"
+	},
+	"type": "DATABASE"
+}
