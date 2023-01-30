@@ -2,7 +2,7 @@
 	"name": "SQL script 7",
 	"properties": {
 		"content": {
-			"query": "SELECT TOP (100) * FROM jan23.dbo.dim_avengers_orig;\n\nSELECT TOP (100) * FROM jan23.dbo.dim_avengers_new;\n\nSELECT TOP (100) * FROM jan23.dbo.dim_avengers_orig_part;",
+			"query": "SELECT TOP (100) * FROM jan23.dbo.dim_avengers_orig;\n\nSELECT TOP (100) * FROM jan23.dbo.dim_avengers_new;\n\nSELECT TOP (100) * FROM jan23.dbo.dim_avengers_orig_part;\n\nSELECT TOP (2) * FROM jan23.dbo.dim_avengers_orig_part;",
 			"metadata": {
 				"language": "sql"
 			},
