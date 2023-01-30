@@ -1,0 +1,17 @@
+{
+	"name": "external-src-file",
+	"properties": {
+		"content": {
+			"query": "CREATE EXTERNAL DATA SOURCE mydatasrc WITH\n(\n\tLOCATION = 'https://stgaccountlkhouse.blob.core.windows.net/stgcontainerlkhouse/'\n\t\n)\n\nCREATE EXTERNAL FILE FORMAT myparquet WITH\n(\n\tFORMAT_TYPE = PARQUET\n)",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "dec22sql",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 6",
+	"properties": {
+		"content": {
+			"query": "SELECT \n  ROW_NUMBER() OVER (ORDER BY id) as SK1\n ,HASHBYTES('SHA2_256', CONCAT(id,'|',Char,'|',Name)) as SK2\n ,HASHBYTES('MD5', CONCAT(id,'|',Char,'|',Name)) as SK4\n ,[id]\n,[Char]\n,[Name]\n,[Band]\n,[Mobile]\n FROM [dec22].[dbo].[avengers01]\n\n\n \n\n\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "dec22",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

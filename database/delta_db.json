@@ -1,0 +1,25 @@
+{
+	"name": "delta_db",
+	"properties": {
+		"Name": "delta_db",
+		"EntityType": "DATABASE",
+		"Origin": {
+			"Type": "SPARK"
+		},
+		"Properties": {
+			"IsSyMSCDMDatabase": true
+		},
+		"Source": {
+			"Provider": "ADLS",
+			"Location": "abfss://stgcontainerlkhouse@stgaccountlkhouse.dfs.core.windows.net/delta_db",
+			"Properties": {
+				"FormatType": "parquet",
+				"LinkedServiceName": "synapsevt22-WorkspaceDefaultStorage"
+			}
+		},
+		"PublishStatus": "PUBLISHED",
+		"ObjectVersion": 2,
+		"ObjectId": "089f4b3a-7c45-4100-93ff-67ad2d464e66"
+	},
+	"type": "DATABASE"
+}

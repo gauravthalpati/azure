@@ -1,0 +1,17 @@
+{
+	"name": "create-external-table",
+	"properties": {
+		"content": {
+			"query": "CREATE EXTERNAL TABLE external_avengers9\n(\n    id int,\n    char varchar(100),\n    name varchar(100),\n    band int,\n    mobile int\n)  \nWITH (\n    LOCATION = 'data/input/parquetdata/',\n    DATA_SOURCE = mydatasrc,  \n    FILE_FORMAT = myparquet\n   \n)\n;",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "dec22sql",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
